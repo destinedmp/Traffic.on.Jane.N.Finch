@@ -53,18 +53,18 @@ This is a Verilog implementation of a 3-way intersection traffic light FSM with 
 
 ## Traffic Light Truth Table
 
-| Current_State | Emergency_vehicle | Emergency_road | M1[R Y G] | M2[R Y G] | MT[R Y G] | S[R Y G] | Notes |
-|---------------------|-------------------|----------------|------------|------------|------------|-----------|-------|
+| Current_State (FSM) | Emergency_vehicle | Emergency_road | M1 | M2 | MT | S | Notes |
+|--------------------|-----------------|----------------|------------|------------|------------|-----------|-------|
 | S1                 | 0               | -              | 001        | 001        | 100        | 100       | Normal: M1 & M2 green |
 | S2                 | 0               | -              | 001        | 010        | 100        | 100       | M1 green, M2 yellow |
 | S3                 | 0               | -              | 001        | 100        | 001        | 100       | M1 green, MT green |
 | S4                 | 0               | -              | 010        | 100        | 010        | 100       | M1 yellow, MT yellow |
 | S5                 | 0               | -              | 100        | 100        | 100        | 001       | Side road green |
 | S6                 | 0               | -              | 100        | 100        | 100        | 010       | Side road yellow |
-| EMERGENCY_MOD    | 1               | 00 (M1)        | 001        | 100        | 100        | 100       | Emergency on M1 |
-| EMERGENCY_MOD    | 1               | 01 (M2)        | 100        | 001        | 100        | 100       | Emergency on M2 |
-| EMERGENCY_MOD     | 1               | 10 (MT)        | 100        | 100        | 001        | 100       | Emergency on MT |
-| EMERGENCY_MOD     | 1               | 11 (S)         | 100        | 100        | 100        | 001       | Emergency on Side Road |
+| EMERGENCY_MODE      | 1               | 00 (M1)        | 001        | 100        | 100        | 100       | Emergency on M1 |
+| EMERGENCY_MODE      | 1               | 01 (M2)        | 100        | 001        | 100        | 100       | Emergency on M2 |
+| EMERGENCY_MODE      | 1               | 10 (MT)        | 100        | 100        | 001        | 100       | Emergency on MT |
+| EMERGENCY_MODE      | 1               | 11 (S)         | 100        | 100        | 100        | 001       | Emergency on Side Road |
 
 ---
 
