@@ -9,7 +9,7 @@ This is a Verilog implementation of a 3-way intersection traffic light FSM with 
 
 ## Inputs
 
-| Input               | Width | Description |
+| Input               | Bits | Description |
 |--------------------|-------|-------------|
 | `clk`              | 1     | Clock signal |
 | `rst`              | 1     | Active-high reset |
@@ -20,7 +20,7 @@ This is a Verilog implementation of a 3-way intersection traffic light FSM with 
 
 ## Outputs
 
-| Output        | Width | Description |
+| Output        | Bits | Description |
 |---------------|-------|-------------|
 | `main_road_1` | 3     | [R Y G] traffic light for Main Road 1 |
 | `main_road_2` | 3     | [R Y G] traffic light for Main Road 2 |
