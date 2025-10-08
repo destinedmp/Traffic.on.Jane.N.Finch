@@ -53,7 +53,7 @@ This is a Verilog implementation of a 3-way intersection traffic light FSM with 
 
 ## Traffic Light Truth Table
 
-| Current_State (FSM) | Emergency_vehicle | Emergency_road | M1 [R Y G] | M2 [R Y G] | MT [R Y G] | S [R Y G] | Notes |
+| Current_State (FSM) | Emergency_vehicle | Emergency_road | M1[R Y G] | M2[R Y G] | MT[R Y G] | S[R Y G] | Notes |
 |---------------------|-------------------|----------------|------------|------------|------------|-----------|-------|
 | S1                 | 0               | -              | 001        | 001        | 100        | 100       | Normal: M1 & M2 green |
 | S2                 | 0               | -              | 001        | 010        | 100        | 100       | M1 green, M2 yellow |
